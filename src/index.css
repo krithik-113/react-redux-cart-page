@@ -1,13 +1,113 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.App{
+  background-color: whitesmoke;
+ 
+  .head{
+    display: inline-block;
+    width: 50%;
+    text-align: end;
+  }
+}
+.cart{
+  display: inline-block;
+  width: 50%;
+  text-align: end;
+  font-size: 1.5rem;
+  cursor: pointer;
+  span{
+    background-color: black;
+    border-radius: 50%;
+    color: whitesmoke;
+    font-size:1.5rem;
+  }
+}
+.image {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 10px  30px;
+  display: flex;
+  img{
+    height:300px;
+    width:300px;
+  }
+  .detail{
+    padding: 20px;
+    background-color: wheat;
+    
+    display: flex;
+    justify-content: space-between;
+  }
+  .button {
+    display: flex;
+    width: fit-content;
+    justify-content: end;
+    align-items: center;
+  }
+}
+.des{
+  width: 100ch;
+}
+select{
+  margin-right: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.price {
+  display: inline;
+}
+.pricing{
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2,300px);
+  place-content: center;
+}
+.under{
+  font-size: 0.5px;
+  color: red;
+}
+.underh1{
+  font-size: 1rem;
+  color: red;
+  margin-top: 80%;
+  margin-right: 70px;
+  cursor: pointer;
+}
+hr{
+  width: 50%;
+}
+.content{
+  display: flex;
+  overflow: scroll;
+}
+.inner-quantity{
+  position: relative;
+  right: 150px;
+  top: 30px;
+}
+@media (max-width:600px){
+  .image{
+    display: block;
+    img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .detail{
+    font-size: 0.5rem;
+    margin-right: 50px;
+    width: 90%;
+  }
+  .des{
+    width: 30ch;
+  }
+  .pricing{
+    grid-template-columns: repeat(2,200px);
+  }
+  hr{
+    width: 100%;
+  }
 }
