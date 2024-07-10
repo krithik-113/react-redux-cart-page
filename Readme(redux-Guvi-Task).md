@@ -1,1 +1,1 @@
-Kindly ignore Counter folder in src folder.
+Kindly ignore Counter folder inside features which is in src folder.
