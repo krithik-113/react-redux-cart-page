@@ -14,7 +14,7 @@ const Quantity = () => {
   const dispatch = useDispatch();
 
   const [item, setItem] = useState([]);
-  const API_URL = `${process.env.PUBLIC_URL}/db.json`;
+  const API_URL = "https://react-redux-cartpage.netlify.app/db.json";
 
   useEffect(() => {
     axios
