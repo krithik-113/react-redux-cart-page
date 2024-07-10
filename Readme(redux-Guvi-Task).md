@@ -1,1 +1,1 @@
-Kindly ignore Counter folder inside features which is in src folder.
+Kindly ignore /counter FOLDER inside /features FOLDER which is in /src FOLDER.
